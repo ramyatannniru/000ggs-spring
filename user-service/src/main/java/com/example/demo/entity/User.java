@@ -1,21 +1,26 @@
 package com.example.demo.entity;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Transient;
+
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 import lombok.Data;
 
 @Entity
-
 public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	
 	private int id;
 	
 	private String username;
@@ -33,8 +38,12 @@ public class User {
 
 	private String previous_project;
 	
-	@ManyToOne(fetch = FetchType.LAZY)
-	private Project current_project;
+	@Transient
+	private int projectid;
+	
+	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@JoinColumn(name = "project_id", nullable = true)
+	private Project project;
 
 	public User(String username, String ulocation, String avialability, String email, String img, String udomain,
 			String previous_project) {
@@ -48,6 +57,24 @@ public class User {
 		this.previous_project = previous_project;
 	}
 	
+	
+	
+	public User(String username, String password, String ulocation, String avialability, String email, String img,
+			String udomain, String previous_project, int projectid) {
+		super();
+		this.username = username;
+		this.password = password;
+		this.ulocation = ulocation;
+		this.avialability = avialability;
+		this.email = email;
+		this.img = img;
+		this.udomain = udomain;
+		this.previous_project = previous_project;
+		this.projectid = projectid;
+	}
+
+
+
 	public User(String username, String password, String ulocation, String avialability, String email, String img,
 			String udomain, String previous_project) {
 		super();
@@ -128,13 +155,7 @@ public class User {
 		this.udomain = udomain;
 	}
 
-	public Project getCurrent_project() {
-		return current_project;
-	}
-
-	public void setCurrent_project(Project current_project) {
-		this.current_project = current_project;
-	}
+	
 
 	public String getPrevious_project() {
 		return previous_project;
@@ -142,6 +163,30 @@ public class User {
 
 	public void setPrevious_project(String previous_project) {
 		this.previous_project = previous_project;
+	}
+
+
+
+	public int getProjectid() {
+		return projectid;
+	}
+
+
+
+	public void setProjectid(int projectid) {
+		this.projectid = projectid;
+	}
+
+
+
+	public Project getProject() {
+		return project;
+	}
+
+
+
+	public void setProject(Project project) {
+		this.project = project;
 	}
 
 	
