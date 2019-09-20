@@ -1,0 +1,9 @@
+package com.example.demo.service;
+
+public class SentenceServiceImpl {
+
+	public SentenceServiceImpl() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

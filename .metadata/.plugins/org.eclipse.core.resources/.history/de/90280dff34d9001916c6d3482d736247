@@ -1,0 +1,9 @@
+package com.example.demo.repository;
+
+public class LeagueRepo {
+
+	public LeagueRepo() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

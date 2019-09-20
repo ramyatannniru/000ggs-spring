@@ -1,0 +1,9 @@
+package com.example.config;
+
+public class DemoAppConfig {
+
+	public DemoAppConfig() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

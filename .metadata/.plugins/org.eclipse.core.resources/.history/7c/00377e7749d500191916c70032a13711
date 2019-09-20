@@ -1,0 +1,9 @@
+package com.example.config;
+
+public class Confi {
+
+	public Confi() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

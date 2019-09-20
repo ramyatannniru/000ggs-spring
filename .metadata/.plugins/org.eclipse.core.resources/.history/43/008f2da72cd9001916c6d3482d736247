@@ -1,0 +1,9 @@
+package com.example.demo.dto;
+
+public class PlayerDto {
+
+	public PlayerDto() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

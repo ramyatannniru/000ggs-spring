@@ -1,0 +1,9 @@
+package com.example.demo.dao;
+
+public class AdjectiveClient {
+
+	public AdjectiveClient() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

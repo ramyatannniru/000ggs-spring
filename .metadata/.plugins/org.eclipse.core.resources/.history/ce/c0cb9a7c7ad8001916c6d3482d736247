@@ -1,0 +1,9 @@
+package com.example.demo.model;
+
+public class CreateUserResponseModel {
+
+	public CreateUserResponseModel() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

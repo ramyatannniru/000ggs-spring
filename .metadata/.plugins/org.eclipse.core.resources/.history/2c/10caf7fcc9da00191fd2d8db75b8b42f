@@ -1,0 +1,9 @@
+package com.example.demo;
+
+public class RabbitMaConfig {
+
+	public RabbitMaConfig() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

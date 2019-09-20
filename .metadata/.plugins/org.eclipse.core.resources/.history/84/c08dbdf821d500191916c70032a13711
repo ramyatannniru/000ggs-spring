@@ -1,0 +1,175 @@
+package com.example.demo.model;
+
+
+
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
+
+@Entity
+public class Reciepe {
+   
+	public Reciepe(String reciepeName, String cooktime, String difficulty, String description, String directions,
+			String source, String servingTime) {
+		super();
+		this.reciepeName = reciepeName;
+		this.cooktime = cooktime;
+		this.difficulty = difficulty;
+		this.description = description;
+		this.directions = directions;
+		this.source = source;
+		this.servingTime = servingTime;
+	}
+
+	
+
+	public Reciepe(String cooktime, String difficulty, String description, String directions, String source,
+			String servingTime) {
+		super();
+		this.cooktime = cooktime;
+		this.difficulty = difficulty;
+		this.description = description;
+		this.directions = directions;
+		this.source = source;
+		this.servingTime = servingTime;
+	}
+
+	public Reciepe( String cooktime, String difficulty, String description, String directions, String source,
+			String servingTime, Notes notes) {
+		super();
+		
+		this.cooktime = cooktime;
+		this.difficulty = difficulty;
+		this.description = description;
+		this.directions = directions;
+		this.source = source;
+		this.servingTime = servingTime;
+		this.notes = notes;
+	}
+
+	public Reciepe(String ReciepeName,String cooktime, String difficulty, String description, String direction, String source, String servingTime,  Notes notes) {
+		super();
+		// TODO Auto-generated constructor stub
+		this.ReciepeName=reciepeNaame
+		this.cooktime = cooktime;
+		this.difficulty = difficulty;
+		this.description = description;
+		this.directions = directions;
+		this.source = source;
+		this.servingTime = servingTime;
+		this.notes = notes;
+	}
+
+	
+	@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+	private String reciepeName;
+    private String cooktime;
+    private String difficulty;
+    private String description;
+    private String directions;
+    private String source;
+    private String servingTime;
+    @OneToOne
+    private Notes notes;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Reciepe reciepe = (Reciepe) o;
+
+        return id != null ? id.equals(reciepe.id) : reciepe.id == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return id != null ? id.hashCode() : 0;
+    }
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getCooktime() {
+		return cooktime;
+	}
+
+	public void setCooktime(String cooktime) {
+		this.cooktime = cooktime;
+	}
+
+	public String getDifficulty() {
+		return difficulty;
+	}
+
+	public void setDifficulty(String difficulty) {
+		this.difficulty = difficulty;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public String getDirections() {
+		return directions;
+	}
+
+	public void setDirections(String directions) {
+		this.directions = directions;
+	}
+
+	public String getSource() {
+		return source;
+	}
+
+	public void setSource(String source) {
+		this.source = source;
+	}
+
+	public String getServingTime() {
+		return servingTime;
+	}
+
+	public void setServingTime(String servingTime) {
+		this.servingTime = servingTime;
+	}
+
+	public Notes getNotes() {
+		return notes;
+	}
+
+	public void setNotes(Notes notes) {
+		this.notes = notes;
+	}
+
+	@Override
+	public String toString() {
+		return "Reciepe [id=" + id + ", ReciepeName=" + ReciepeName + ", cooktime=" + cooktime + ", difficulty="
+				+ difficulty + ", description=" + description + ", directions=" + directions + ", source=" + source
+				+ ", servingTime=" + servingTime + ", notes=" + notes + "]";
+	}
+
+	public String getReciepeName() {
+		return ReciepeName;
+	}
+
+	public void setReciepeName(String reciepeName) {
+		ReciepeName = reciepeName;
+	}
+
+	
+
+	
+
+   
+}

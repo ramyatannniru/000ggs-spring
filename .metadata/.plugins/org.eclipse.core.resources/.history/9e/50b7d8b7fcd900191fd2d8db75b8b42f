@@ -1,0 +1,9 @@
+package com.example.demo.dao;
+
+public class SubjectClient {
+
+	public SubjectClient() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

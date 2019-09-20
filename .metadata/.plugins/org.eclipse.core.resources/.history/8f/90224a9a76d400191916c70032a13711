@@ -1,0 +1,65 @@
+package com.example.demo.bootstrap;
+
+import org.springframework.context.ApplicationListener;
+import org.springframework.context.event.ContextRefreshedEvent;
+import org.springframework.stereotype.Component;
+
+import com.example.demo.model.Flight;
+import com.example.demo.model.Passenger;
+import com.example.demo.model.Reservation;
+import com.example.demo.repositories.FlightRepositories;
+import com.example.demo.repositories.PassengerRepository;
+import com.example.demo.repositories.ReservationRepositories;
+
+@Component
+public class DevJpaBootStrap implements ApplicationListener<ContextRefreshedEvent> {
+
+	public DevJpaBootStrap(PassengerRepository passengerRepository, FlightRepositories flightRepositories,
+			ReservationRepositories reservationRepositories) {
+		super();
+		this.passengerRepository = passengerRepository;
+		this.flightRepositories = flightRepositories;
+		this.reservationRepositories = reservationRepositories;
+	}
+
+	private PassengerRepository passengerRepository;
+	private FlightRepositories flightRepositories;
+	private ReservationRepositories reservationRepositories;
+
+	
+
+	@Override
+	public void onApplicationEvent(ContextRefreshedEvent event) {
+		// TODO Auto-generated method stub
+		init();
+	}
+
+	private void init() {
+		// TODO Auto-generated method stub
+		Reservation  reservation = new Reservation();
+		reservation.setName("international");
+		reservation.setAddress("12th Street, LA");
+		reservationRepositories.save(reservation);
+
+		// Eric
+		Flight kingfisher = new Flight("kingfisher", "india","canada");
+		Passenger sri = new Passenger("ramay","female","22", reservation);
+		
+        kingfisher.getPassenger().add(sri);
+        sri.getFlights().add(kingfisher);
+		
+		flightRepositories.save(kingfisher);
+		passengerRepository.save(sri);
+		
+		// Rod
+		Author rod = new Author("Rod", "Johnson");
+		Book noEJB = new Book("J2EE Development without EJB", "23444", publisher);
+		rod.getBooks().add(noEJB);
+		noEJB.getAuthors().add(rod);
+
+		authorRepository.save(rod);
+		bookRepository.save(noEJB);
+
+	}
+
+}

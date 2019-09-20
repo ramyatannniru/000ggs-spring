@@ -1,0 +1,9 @@
+package com.example.demo.service;
+
+public class WordServiceImpl {
+
+	public WordServiceImpl() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

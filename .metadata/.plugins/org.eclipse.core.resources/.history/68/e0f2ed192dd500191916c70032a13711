@@ -1,0 +1,82 @@
+package com.example.demo.model;
+
+
+
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
+
+@Entity
+public class Notes {
+   
+	public Notes( String reciepeNotes, Reciepe reciepe) {
+		super();
+		
+		this.reciepeNotes = reciepeNotes;
+		this.reciepe = reciepe;
+	}
+
+	public Notes() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	
+
+	@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+    private String reciepeNotes;
+   @OneToOne
+   private Reciepe reciepe;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Notes notes = (Notes) o;
+
+        return id != null ? id.equals(notes.id) : notes.id == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return id != null ? id.hashCode() : 0;
+    }
+
+	@Override
+	public String toString() {
+		return "Notes [id=" + id + ", reciepeNotes=" + reciepeNotes + ", reciepe=" + reciepe + "]";
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getReciepeNotes() {
+		return reciepeNotes;
+	}
+
+	public void setReciepeNotes(String reciepeNotes) {
+		this.reciepeNotes = reciepeNotes;
+	}
+
+	public Reciepe getReciepe() {
+		return reciepe;
+	}
+
+	public void setReciepe(Reciepe reciepe) {
+		this.reciepe = reciepe;
+	}
+
+	
+
+	
+
+   
+}

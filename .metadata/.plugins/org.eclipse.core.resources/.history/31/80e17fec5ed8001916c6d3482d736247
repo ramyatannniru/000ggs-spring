@@ -1,0 +1,9 @@
+package com.example.demo.controller;
+
+public class GalleryController {
+
+	public GalleryController() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

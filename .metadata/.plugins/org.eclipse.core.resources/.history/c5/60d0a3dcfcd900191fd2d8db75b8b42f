@@ -1,0 +1,9 @@
+package com.example.demo.dao;
+
+public class VerbClient {
+
+	public VerbClient() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

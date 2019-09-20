@@ -1,0 +1,9 @@
+package com.example.demo.data;
+
+public class Gallery {
+
+	public Gallery() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,59 @@
+package com.example.demo;
+
+import java.io.Serializable;
+import java.util.List;
+
+import javax.annotation.PostConstruct;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+
+
+import org.hibernate.Session;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.annotation.Persistent;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+
+@Repository
+public class StudentDaoImpl implements StudentDao {
+	
+@Autowired
+	private EntityManager em;
+	private Session session;
+	
+
+
+
+   @SuppressWarnings("unchecked")
+   @javax.transaction.Transactional
+	@Override
+	public void createNewStudent(Student stu) {
+		// TODO Auto-generated method stub
+		session=em.unwrap(Session.class);
+		Student theStudent =new Student();
+		
+		theStudent.setId(theStudent.getId());
+		
+		theStudent.setFirstName(theStudent.getFirstName());
+	
+		theStudent.setLastName(theStudent.getLastName());
+		
+		theStudent.setEmail(theStudent.getEmail());
+		
+		Serializable query=session.save(theStudent);
+		
+	}
+	
+	@SuppressWarnings("unchecked")
+	@Transactional
+	public List<Student> getAllStudents() {
+		// TODO Auto-generated method stub
+		session=em.unwrap(Session.class);
+		Query query=session.createQuery("from Student",Student.class);
+		return query.getResultList();
+	}
+
+	}
+

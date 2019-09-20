@@ -1,0 +1,98 @@
+package com.example.demo.model;
+
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
+
+@Entity
+public class Passenger {
+    public Passenger(Long id, String name, String gender, String age, Reservation reservation, Set<Flight> flight) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.gender = gender;
+		this.age = age;
+		this.reservation = reservation;
+		this.flight = flight;
+	}
+
+	public Passenger( String name, String gender, String age, Reservation reservation) {
+		super();
+		
+		this.name = name;
+		this.gender = gender;
+		this.age = age;
+		this.reservation = reservation;
+	}
+
+	public Passenger( String name, String gender, String age) {
+		super();
+		
+		this.name = name;
+		this.gender = gender;
+		this.age = age;
+	}
+
+	public Passenger() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+    private String name;
+    private String gender;
+    private String age;
+    @OneToOne
+    private Reservation reservation;
+
+    @ManyToMany
+    @JoinTable(name = "passenger_flight", joinColumns = @JoinColumn(name = "passenger_id"),
+    inverseJoinColumns = @JoinColumn(name = "flight_id"))
+    private Set<Flight> flights = new HashSet<>();
+
+   
+    
+
+    public Reservation getRservation() {
+        return reservation;
+    }
+
+    public void setReservation(Reservation reservation) {
+        this.reservation = reservation;
+    }
+
+    public Set<Flight> getFlights() {
+        return flight;
+    }
+
+    public void setFlights(Set<Flight> flight) {
+        this.flight = flight;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Passenger passenger = (Passenger) o;
+
+        return id != null ? id.equals(passenger.id) : passenger.id == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return id != null ? id.hashCode() : 0;
+    }
+
+	@Override
+	public String toString() {
+		return "Passenger [id=" + id + ", name=" + name + ", gender=" + gender + ", age=" + age + ", reservation="
+				+ reservation + ", flight=" + flight + "]";
+	}
+
+	
+
+   
+}

@@ -1,0 +1,9 @@
+package com.example.demo;
+
+public class Rabbit {
+
+	public Rabbit() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

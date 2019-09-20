@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="spring_boot_demo_jointable1"/>
+<aop-project name="com_student_demo-spring"/>
+<aop-project name="spring_boot_security_employeetype"/>
+<aop-project name="spring_boot_server_microservice_16_09dd"/>
+<aop-project name="com_demo_spring"/>
+<aop-project name="zuul_demo_deployment"/>
+<aop-project name="spring_server_microservice_config_actuator"/>
+<aop-project name="com.demo.customer.hibernate">
+<aspect-definition advice-class-name="org.springframework.transaction.interceptor.TransactionInterceptor" advice-method-name="invoke" advice-method-parameter-types="org.aopalliance.intercept.MethodInvocation" advice-type="AROUND" aspect-end-line-number="64" aspect-name="org.springframework.transaction.interceptor.TransactionInterceptor#com.demo.customer.hibernate#src/main/webapp/WEB-INF/com.demo.customer.hibernate.xml#64" aspect-start-line-number="64" factory-id="org.springframework.ide.eclipse.aop.core.javaAdvisorDefinitionElementFactory" file="/com.demo.customer.hibernate/src/main/webapp/WEB-INF/com.demo.customer.hibernate.xml" pointcut-expression="(@within(org.springframework.transaction.annotation.Transactional) || @annotation(org.springframework.transaction.annotation.Transactional)) &amp;&amp; execution(* *..*(..))" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:com.demo.customer.hibernate|3:src/main/webapp/WEB-INF/com.demo.customer.hibernate.xml|7:beans:15|8:customerServiceImpl:15" bean-file="/com.demo.customer.hibernate/src/main/webapp/WEB-INF/com.demo.customer.hibernate.xml" bean-start-line="15" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/com.demo.customer.hibernate/src/main/webapp/WEB-INF/com.demo.customer.hibernate.xml" source="=com.demo.customer.hibernate/C:\/Users\/B4ibmjava32\/.m2\/repository\/org\/springframework\/spring-tx\/5.1.9.RELEASE\/spring-tx-5.1.9.RELEASE.jar&lt;org.springframework.transaction.interceptor(TransactionInterceptor.class[TransactionInterceptor~invoke~Lorg.aopalliance.intercept.MethodInvocation;" source-start-line="-1" target="=com.demo.customer.hibernate/src\/main\/java&lt;com.demo.customer.service{CustomerServiceImpl.java[CustomerServiceImpl~getCustomers" target-start-line="23"/>
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:com.demo.customer.hibernate|3:src/main/webapp/WEB-INF/com.demo.customer.hibernate.xml|7:beans:15|8:customerServiceImpl:15" bean-file="/com.demo.customer.hibernate/src/main/webapp/WEB-INF/com.demo.customer.hibernate.xml" bean-start-line="15" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/com.demo.customer.hibernate/src/main/webapp/WEB-INF/com.demo.customer.hibernate.xml" source="=com.demo.customer.hibernate/C:\/Users\/B4ibmjava32\/.m2\/repository\/org\/springframework\/spring-tx\/5.1.9.RELEASE\/spring-tx-5.1.9.RELEASE.jar&lt;org.springframework.transaction.interceptor(TransactionInterceptor.class[TransactionInterceptor~invoke~Lorg.aopalliance.intercept.MethodInvocation;" source-start-line="-1" target="=com.demo.customer.hibernate/src\/main\/java&lt;com.demo.customer.service{CustomerServiceImpl.java[CustomerServiceImpl~saveCustomer~QCustomer;" target-start-line="29"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="spring_boot_reciepe_lists_diaplay"/>
+<aop-project name="spring_boot_securit_password_encryption"/>
+<aop-project name="my-client"/>
+<aop-project name="my-image-service"/>
+<aop-project name="spring_boot_demo"/>
+<aop-project name="product-service"/>
+<aop-project name="my-gallery-service-1"/>
+<aop-project name="zuul_demo_deployment-feignclient"/>
+<aop-project name="soccer_league"/>
+<aop-project name="common_eurekaserver_18_09"/>
+<aop-project name="spring_boot_passenger-table"/>
+<aop-project name="spring.rest.api.crm.config"/>
+<aop-project name="spring_boot_security_demo"/>
+<aop-project name="user_data_cloud_deployment"/>
+<aop-project name="spring_boot_security_antmatcher_demo"/>
+<aop-project name="Demo_Spring"/>
+<aop-project name="demo"/>
+<aop-project name="spring_boot_securit_password_encryption_jdbc"/>
+<aop-project name="com_spring_form_demo"/>
+<aop-project name="jdbc.application"/>
+</aop-reference-model>

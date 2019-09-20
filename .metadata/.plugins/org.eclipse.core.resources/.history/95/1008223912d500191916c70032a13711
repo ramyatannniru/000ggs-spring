@@ -1,0 +1,14 @@
+package com.example.demo.model;
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
+@Entity
+public class Ingredients {
+	private Long id;
+
+	public Ingredients{
+		// TODO Auto-generated constructor stub
+		super();
+	}
+
+}

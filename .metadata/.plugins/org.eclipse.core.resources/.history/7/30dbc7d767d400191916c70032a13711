@@ -1,0 +1,9 @@
+package com.example.demo.bootstrap;
+
+public class DevJpaBootStrap {
+
+	public DevJpaBootStrap() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

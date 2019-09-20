@@ -1,0 +1,59 @@
+package com.example.demo.model;
+
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
+
+@Entity
+public class Ingredients {
+  
+	public Ingredients() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+    private String amount;
+    private String decescription;
+    
+   
+
+   
+    
+
+   
+
+    public Set<Flight> getFlights() {
+        return flights;
+    }
+
+    public void setFlights(Set<Flight> flights) {
+        this.flights = flights;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Ingredients passenger = (Ingredients) o;
+
+        return id != null ? id.equals(passenger.id) : passenger.id == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return id != null ? id.hashCode() : 0;
+    }
+
+	@Override
+	public String toString() {
+		return "Passenger [id=" + id + ", name=" + name + ", gender=" + gender + ", age=" + age + ",  flights=" + flights + "]";
+	}
+
+	
+
+   
+}

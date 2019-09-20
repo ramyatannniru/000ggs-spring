@@ -1,0 +1,9 @@
+package com.example.demo.bootstrap;
+
+public class DataJpaBoot {
+
+	public DataJpaBoot() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

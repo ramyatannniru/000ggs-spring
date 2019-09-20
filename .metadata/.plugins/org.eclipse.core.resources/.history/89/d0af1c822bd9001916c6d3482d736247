@@ -1,0 +1,9 @@
+package com.example.demo.data;
+
+public class League {
+
+	public League() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

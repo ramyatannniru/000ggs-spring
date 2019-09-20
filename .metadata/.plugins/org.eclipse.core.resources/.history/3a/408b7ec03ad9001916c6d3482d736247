@@ -1,0 +1,9 @@
+package com.example.demo.model;
+
+public class CreateLeagueReaponseModel {
+
+	public CreateLeagueReaponseModel() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

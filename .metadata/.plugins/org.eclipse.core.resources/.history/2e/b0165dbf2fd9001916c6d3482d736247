@@ -1,0 +1,9 @@
+package com.example.demo.services;
+
+public class PlayerServiceImpl {
+
+	public PlayerServiceImpl() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

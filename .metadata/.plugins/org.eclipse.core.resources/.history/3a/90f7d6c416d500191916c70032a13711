@@ -1,0 +1,9 @@
+package com.example.demo.repository;
+
+public class IngredientRepository {
+
+	public IngredientRepository() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

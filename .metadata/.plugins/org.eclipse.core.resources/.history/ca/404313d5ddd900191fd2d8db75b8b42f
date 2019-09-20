@@ -1,0 +1,9 @@
+package com.example.demo;
+
+public class ProductServiceClient {
+
+	public ProductServiceClient() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.example.demo.controller;
+
+public class LeagueController {
+
+	public LeagueController() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

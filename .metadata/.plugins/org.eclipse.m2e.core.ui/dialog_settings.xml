@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\B4ibmjava32\Documents\workspace-sts-3.9.9.RELEASE\spring_boot_reciepe_lists_diaplay\src\main\resources\templates\reciepe.html"/>
+			<item value="C:\Users\B4ibmjava32\Documents\workspace-sts-3.9.9.RELEASE\com.demo.customer.hibernate\src\main\webapp\WEB-INF\com.demo.customer.hibernate.xml"/>
+			<item value="C:\Users\B4ibmjava32\Documents\workspace-sts-3.9.9.RELEASE\com_demo_customer_hibernate"/>
+			<item value="C:\Users\B4ibmjava32\Documents\workspace-sts-3.9.9.RELEASE\com_spring_form_demo\src\main\webapp\WEB-INF\web.xml"/>
+			<item value="C:\Users\B4ibmjava32\Documents\workspace-sts-3.9.9.RELEASE\com_demo_spring\src\main\webapp\WEB-INF\web.xml"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.myCompany.spring_security_userDefined"/>
+			<item value="com.myCompany.spring_security"/>
+			<item value="com.gsd.spring.spring.rest.api.crm.config"/>
+			<item value="com.gsd.spring.com.demo.rest.api"/>
+			<item value="com.gsd.spring.com.demo.customer.hibernate"/>
+			<item value="com.gsd.spring.example"/>
+			<item value="com.gsd.spring.com_demo_customer_hibernate"/>
+			<item value="com.gsd.spring.com_spring_demo_form"/>
+			<item value="com.gsd.spring.com_spring_form_demo"/>
+			<item value="com.gsd.spring.com_student_demo_spring"/>
+			<item value="com.gsd.spring.com_demo_spring"/>
+			<item value="com.gsd.spring.com.mvc.demo"/>
+			<item value="com.gsd.spring.jdbc.application"/>
+			<item value="com.gsd.spring.Demo_Spring"/>
+		</list>
+		<list key="groupId">
+			<item value="com.myCompany"/>
+			<item value="com.gsd.spring"/>
+		</list>
+		<list key="artifactId">
+			<item value="spring-security-userDefined"/>
+			<item value="spring-security"/>
+			<item value="spring.rest.api.crm.config"/>
+			<item value="com.demo.rest.api"/>
+			<item value="com.demo.customer.hibernate"/>
+			<item value="example"/>
+			<item value="com_demo_customer_hibernate"/>
+			<item value="com_spring_demo_form"/>
+			<item value="com_spring_form_demo"/>
+			<item value="com_student_demo-spring"/>
+			<item value="com_demo_spring"/>
+			<item value="com.mvc.demo"/>
+			<item value="jdbc.application"/>
+			<item value="Demo_Spring"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\B4ibmjava32\Downloads\demo"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

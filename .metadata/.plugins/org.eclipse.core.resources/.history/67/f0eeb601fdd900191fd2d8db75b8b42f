@@ -1,0 +1,9 @@
+package com.example.demo.dao;
+
+public class ArticleClient {
+
+	public ArticleClient() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

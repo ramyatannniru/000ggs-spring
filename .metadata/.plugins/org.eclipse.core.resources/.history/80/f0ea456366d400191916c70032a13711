@@ -1,0 +1,9 @@
+package com.example.demo.repositories;
+
+public class ReservationRepositories {
+
+	public ReservationRepositories() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
